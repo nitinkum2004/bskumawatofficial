@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s linear;
+  box-sizing: border-box;
+}
+
+.top-h4 {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5em;
+}
+
+.top-h3 {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: gray;
+  color: white;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.child,
+.financial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
+}
+
+.img-container {
+  overflow: hidden;
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(206, 215, 223);
+  color: black;
+  max-width: 500px;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.img-container:hover {
+  scale: 1.01;
+}
+
+.img-container:hover .img-ad {
+  scale: 1.02;
+}
+
+.img-ad {
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 0.5s linear;
+}
+
+.img-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-section {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+}
+
+.down {
+  width: 20px;
+}
+
+.download-section:hover {
+  background-color: rgba(56, 55, 55, 0.774);
+  color: white;
+}
+
+.download-section:hover .down {
+  filter: invert();
+}
