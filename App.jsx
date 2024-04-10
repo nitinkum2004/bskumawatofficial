@@ -4,34 +4,35 @@ let child = document.querySelector(".child");
 const childObjects = [
   { 
     heading: "Education Banner", 
-    src: "img/posts/Education.png", 
+    src: "img/posts/child/Education.png", 
     type: "ADD | POST",
     category: "Child Education"
   },
   { 
     heading: "Child Education", 
-    src: "/img/posts/Add child education english.jpg", 
+    src: "img/posts/child/AddChildEducationEng.jpg", 
     type: "ADD",
     category: "Child Education"
   },
   { 
     heading: "Child Education", 
-    src: "/img/posts/Add child education Hindi.jpg", 
+    src: "img/posts/child/AddChildEducationHn.jpg", 
     type: "ADD",
     category: "Child Education"
   },
   { 
     heading: "Child Education", 
-    src: "/img/posts/Post child education English.jpg", 
+    src: "img/posts/child/AddPostChildEducationEng.jpg",  
     type: "ADD | POST",
     category: "Child Education"
   },
   { 
     heading: "Child Education", 
-    src: "/img/posts/Post child education Hindi.jpg", 
+    src: "img/posts/child/AddPostChildEducationHn.jpg",  
     type: "ADD | POST",
     category: "Child Education"
   },
+  
 ];
 
 
@@ -58,30 +59,31 @@ childObjects.forEach(object => {
   child.appendChild(listItem);
 });
 
+/**************************************************************************** */
 // financial section
 let financial = document.querySelector(".financial");
 const financialObjects = [
   { 
     heading: "Financial Dream English", 
-    src: "img/posts/fine/Post Add Dream Come true Add all Caatagory English.jpg", 
+    src: "img/posts/fine/PostAddDreamFineEng.jpg", 
     type: "ADD | POST",
     category: "Financial"
   },
   { 
     heading: "Financial Dream Hindi", 
-    src: "img/posts/fine/Post Add Dream Come true Add all Caatagory Hindi.jpg", 
+    src: "img/posts/fine/PostAddDreamFineHn.jpg", 
     type: "ADD | POST",
     category: "Financial"
   },
   { 
     heading: "Financial Specialist English", 
-    src: "img/posts/fine/Post add Specialist english add.jpg", 
+    src: "img/posts/fine/PostAddFineSpeacialistEng.jpg", 
     type: "ADD | POST",
     category: "Financial"
   },
   { 
     heading: "Financial Specialist Hindi", 
-    src: "img/posts/fine/Post add Specialist Hindi add.jpg", 
+    src: "img/posts/fine/PostAddFineSpeacialistHn.jpg", 
     type: "ADD | POST",
     category: "Financial"
   },
