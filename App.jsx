@@ -125,7 +125,7 @@ const taxObjects = [
   },
   { 
     heading: "Tax Saving Hindi", 
-    src: "img/posts/tax/AddPostTaxSavingHin.jpg", 
+    src: "img/posts/tax/AddPostTaxSavingHindi.jpg", 
     type: "ADD | POST",
     category: "Tax"
   },
