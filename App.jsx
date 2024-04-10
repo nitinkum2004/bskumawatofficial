@@ -113,4 +113,87 @@ financialObjects.forEach(object => {
   financial.appendChild(listItem);
 });
 
+/**************************************************************************** */
+// Tax section
+let tax = document.querySelector(".tax");
+const taxObjects = [
+  { 
+    heading: "Tax Saving English", 
+    src: "img/posts/tax/AddPostTaxSavingEng.jpg", 
+    type: "ADD | POST",
+    category: "Tax"
+  },
+  { 
+    heading: "Tax Saving Hindi", 
+    src: "img/posts/tax/AddPostTaxSavingHin.jpg", 
+    type: "ADD | POST",
+    category: "Tax"
+  },
+  { 
+    heading: "Tax Saving Hindi", 
+    src: "img/posts/tax/AddPostTaxtSavingEngHn.jpg", 
+    type: "ADD | POST",
+    category: "Tax"
+  },
+  { 
+    heading: "Tax Saving Hindi", 
+    src: "img/posts/tax/PostAddFinePlannerEngHn.jpg", 
+    type: "ADD | POST",
+    category: "Tax"
+  },
+  
+ 
+  
+];
+taxObjects.forEach(object => {
+  const listItem = document.createElement("div");
+  listItem.innerHTML = `<div class="img-container">\
+        <div class="top">\
+          <img src="${object.src}" alt="" class="img-ad" loading="lazy" />\
+        </div>\
+        <div class="img-footer">\
+          <div class="heading-subheading">\
+            <h2>${object.heading}</h2>\
+            <h5>${object.type}</h5>\
+          </div>\
+          <a\
+            href="${object.src}"\
+            download="${object.src}"\
+            class="download-section"\
+            >Download <img src="img/down.png" alt="" class="down"\
+          /></a>\
+        </div>\
+      </div>`
+  // listItem.innerHTML = `<div><img src="${object.color}" alt="" /><h1>${object.name}</h1>Price: $${object.price.toFixed(2)}</div>`
+  tax.appendChild(listItem);
+});
 
+/**************************************************************************** */
+
+let btnChild = document.querySelector("#btn-child")
+let btnFinance = document.querySelector("#btn-finance")
+let btnTax = document.querySelector("#btn-tax")
+
+function removeSelect(btn ,divName) {
+  btn.classList.remove("btn-select");
+  divName.classList.add('hide')
+}
+
+btnChild.addEventListener("click",()=>{
+  removeSelect(btnFinance,financial)
+  removeSelect(btnTax, tax)
+  btnChild.classList.add("btn-select");
+  child.classList.remove("hide");
+})
+btnFinance.addEventListener("click",()=>{
+  removeSelect(btnChild,child)
+  removeSelect(btnTax, tax)
+  btnFinance.classList.add("btn-select");
+  financial.classList.remove("hide");
+})
+btnTax.addEventListener("click",()=>{
+  removeSelect(btnFinance,financial)
+  removeSelect(btnChild, child)
+  btnTax.classList.add("btn-select");
+  tax.classList.remove("hide");
+})
