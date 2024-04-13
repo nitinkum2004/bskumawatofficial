@@ -6,17 +6,22 @@
     scroll-behavior: smooth;
 }
 
-.home {
-    display: flex;
-    flex-direction: column;
-}
-
 .top-h4 {
     max-width: 1280px;
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
     font-size: 2.5em;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar {
@@ -49,11 +54,6 @@
     border-bottom: 0.1rem solid white;
 }
 
-body {
-    color: white;
-    background-color: black;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -68,68 +68,6 @@ a {
     transition: all 0.5s linear;
 }
 
-.img-container {
-    overflow: hidden;
-    transition: all 0.5s linear;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(206, 215, 223);
-    color: black;
-    max-width: 500px;
-    margin: 2rem;
-    border-radius: 1rem;
-}
-
-.img-container:hover {
-    scale: 1.01;
-}
-
-.img-container:hover .img-ad {
-    scale: 1.02;
-}
-
-.img-ad {
-    max-width: 100%;
-    object-fit: cover;
-    transition: all 0.5s linear;
-}
-
-.img-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.download-section {
-    display: flex;
-    gap: 0.2rem;
-    align-items: center;
-    background-color: white;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: 0.1rem solid black;
-}
-
-.down {
-    width: 20px;
-}
-
-.download-section:hover {
-    background-color: rgba(56, 55, 55, 0.774);
-    color: white;
-}
-
-.download-section:hover .down {
-    filter: invert();
-}
-
 .hide {
     display: none;
 }
@@ -140,14 +78,14 @@ a {
     }
     .nav-bar {
         min-width: 13rem;
-        height: 80vh;
+        height: 83vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 6rem;
     }
     .section {
-        height: 80vh;
+        height: 83vh;
         overflow-y: auto;
         scrollbar-width: thin;
         scrollbar-color: white transparent;
@@ -164,4 +102,62 @@ footer {
 
 .bottom-a {
     color: aqua;
+}
+
+code {
+    font-family: sans-serif;
+}
+
+.email-section {
+    background-color: rgba(245, 245, 220, 0.11);
+    margin: 3rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-img {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.copy-img img {
+    padding: 0.2rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.copy-img img:hover {
+    background-color: rgba(240, 255, 255, 0.274);
+}
+
+.name-input {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.name-input input {
+    width: 80%;
+    height: 2rem;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.submit-name-btn {
+    background-color: rgb(192, 243, 243);
+    height: 2rem;
+    width: 20%;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
